@@ -1,0 +1,63 @@
+body{
+    height: 100vh;
+    background:beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zone{
+    border-radius: 50%;
+    background-color: rgb(255,255,255);
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    animation: infinite 20s rotate linear;
+}
+
+.bubble{
+    position: absolute;
+    top: 205px;
+    left: 105px;
+    background: white;
+    height: 75px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.cup{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    background: brown;
+    border: 20px solid white;
+    outline: 3px solid black;
+    z-index: 1;
+}
+
+.handle{
+    height: 12px;
+    width: 50px;
+    background: white;
+    border: 20px solid white;
+    border-left: 0px;
+    z-index: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: 3px solid black;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
